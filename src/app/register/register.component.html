@@ -1,0 +1,29 @@
+<mat-card>
+    <div class="login">
+      <h2>Register a New User</h2>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>User Name</mat-label>
+          <input matInput placeholder="Enter your name" [formControl]="name" required>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your Password</mat-label>
+          <input matInput placeholder="*******" required [formControl]="password">
+        </mat-form-field>
+      </p>
+      <div>
+        <button class="btn btn-primary" (click)="onSubmit()">Register</button>
+        <a class="register" href="http://localhost:4200/login" mat-menu-item>Log In here</a>
+      </div>
+    </div>
+  </mat-card>
+  

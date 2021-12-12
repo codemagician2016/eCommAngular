@@ -1,0 +1,18 @@
+.form {
+    margin: 20%;
+}   
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mat-card {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.register {
+    margin-left: 20px;
+}
